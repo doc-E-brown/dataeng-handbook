@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          # fetch-depth: r
           submodules: recursive
 
       - name: Setup Python
@@ -24,7 +24,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build the site
-        run: pelican content -o output -s publishconf.py
+        run: make publish
 
       - name: Export to gh-pages
         run: ghp-import output -b gh-pages
