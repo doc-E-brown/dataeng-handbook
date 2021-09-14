@@ -50,7 +50,7 @@
     
 
     <p><a href="{filename}aws_naming_conventions.html">AWS Naming Conventions</a></p>
-<h3 id="general"><a class="toclink" href="#general">General</a><a class="headerlink" href="#general" title="Permanent link">&para;</a></h3>
+<h3 id="general"><a class="toclink" href="#general">General</a></h3>
 <ul>
 <li>Use environments in discrete folders, not workspaces, to separate environments</li>
 <li>Use symlinks wherever possible to avoid repetition.</li>
@@ -60,8 +60,8 @@
 <li>Stored in same account as deployed infrastructure</li>
 <li>Terraform State key naming convention: <code>&lt;repo&gt;/&lt;stage&gt;/&lt;environment&gt;/tfstate</code></li>
 </ul>
-<h4 id="terraform-syle-guide"><a class="toclink" href="#terraform-syle-guide">Terraform Syle Guide</a><a class="headerlink" href="#terraform-syle-guide" title="Permanent link">&para;</a></h4>
-<h4 id="resource-and-data-source-arguments"><a class="toclink" href="#resource-and-data-source-arguments">Resource and data source arguments</a><a class="headerlink" href="#resource-and-data-source-arguments" title="Permanent link">&para;</a></h4>
+<h4 id="terraform-syle-guide"><a class="toclink" href="#terraform-syle-guide">Terraform Syle Guide</a></h4>
+<h4 id="resource-and-data-source-arguments"><a class="toclink" href="#resource-and-data-source-arguments">Resource and data source arguments</a></h4>
 <p>Do not repeat resource type in resource (not partially, nor completely):</p>
 <p><strong>Good:</strong></p>
 <pre><code>resource &quot;aws_route_table&quot; &quot;public&quot; {}
@@ -147,7 +147,7 @@ All of these should be separated by a single empty line.</p>
 <pre><code>  count = length(var.public_subnets) &gt; 0 ? 1 : 0
   count = var.create_vpc ? 1 : 0
 </code></pre>
-<h3 id="variables"><a class="toclink" href="#variables">Variables</a><a class="headerlink" href="#variables" title="Permanent link">&para;</a></h3>
+<h3 id="variables"><a class="toclink" href="#variables">Variables</a></h3>
 <ol>
 <li>
 <p>Don't reinvent the wheel in resource modules - use the same variable names, description and default as defined in "Argument Reference" 
@@ -169,7 +169,7 @@ All of these should be separated by a single empty line.</p>
 <p>Always include a description for all variables even if you think it is obvious.</p>
 </li>
 </ol>
-<h3 id="outputs"><a class="toclink" href="#outputs">Outputs</a><a class="headerlink" href="#outputs" title="Permanent link">&para;</a></h3>
+<h3 id="outputs"><a class="toclink" href="#outputs">Outputs</a></h3>
 <p>Names for outputs are important to make them consistent and understandable outside of its scope (when
 a user is using a module it should be obvious what type and the attribute of the value that is returned).</p>
 <ol>
@@ -193,7 +193,7 @@ a user is using a module it should be obvious what type and the attribute of the
 <p>Always include a description for all outputs even if you think it is obvious.</p>
 </li>
 </ol>
-<h3 id="git-repo-directory-structure"><a class="toclink" href="#git-repo-directory-structure">Git Repo directory structure:</a><a class="headerlink" href="#git-repo-directory-structure" title="Permanent link">&para;</a></h3>
+<h3 id="git-repo-directory-structure"><a class="toclink" href="#git-repo-directory-structure">Git Repo directory structure:</a></h3>
 <p>(incomplete)
 (see also cookiecutter)</p>
 <pre><code>.
