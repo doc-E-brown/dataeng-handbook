@@ -13,4 +13,3 @@ from pelicanconf import *
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = os.getenv('SITEURL')
 assert SITEURL is not None
-print(SITEURL)

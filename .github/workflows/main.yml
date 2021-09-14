@@ -31,8 +31,6 @@ jobs:
 
       - name: Export to gh-pages
         run: ghp-import output -b gh-pages
-        env:
-          SITEURL: ${{ secrets.SITEURL }}
 
       - name: Publish
         run: |
