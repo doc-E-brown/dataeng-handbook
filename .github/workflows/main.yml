@@ -13,9 +13,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+           fetch-depth: 2
+           submodules: recursive
           
-      - name: Pull the theme
-        run: git submodule update --init --recursive       
+      #- name: Pull the theme
+      #  run: git submodule update --init --recursive       
 
       - name: Setup Python
         uses: actions/setup-python@v2
