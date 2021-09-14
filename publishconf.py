@@ -12,3 +12,4 @@ from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = os.getenv('SITEURL', 'https://dataengineering.harrisonai.io')
+print(SITEURL)
