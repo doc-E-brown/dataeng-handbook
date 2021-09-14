@@ -6,7 +6,6 @@ from collections import OrderedDict
 
 AUTHOR = 'harrison.ai Data Engineering Team'
 SITENAME = 'harrison.ai Data Engineering Handbook'
-SITEURL = 'https://doc-e-brown.github.io/dataeng-handbook'
 THEME = 'pelican-theme'
 
 PATH = 'content'
